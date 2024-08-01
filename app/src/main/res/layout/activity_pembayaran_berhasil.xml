@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292D36"
+    tools:context=".PembayaranBerhasil">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bg2"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/bg1"/>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical"
+            android:background="#804A4F59">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center"
+                android:background="#801FEE34">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:text="pembayaran berhasil"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Anda : "
+                    android:layout_marginHorizontal="20dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppinslight"
+                    android:textSize="12dp"/>
+
+                <EditText
+                    android:id="@+id/namatxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:editable="false"
+                    android:fontFamily="@font/poppinsextralight"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Meja : "
+                    android:layout_marginHorizontal="20dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppinslight"
+                    android:textSize="12dp"/>
+
+                <EditText
+                    android:id="@+id/nomeja"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:editable="false"
+                    android:fontFamily="@font/poppinsextralight"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Anda : "
+                    android:layout_marginHorizontal="20dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppinslight"
+                    android:textSize="12dp"/>
+
+                <EditText
+                    android:id="@+id/alamattxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:editable="false"
+                    android:fontFamily="@font/poppinsextralight"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Telepon : "
+                    android:layout_marginHorizontal="20dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppinslight"
+                    android:textSize="12dp"/>
+
+                <EditText
+                    android:id="@+id/notxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:editable="false"
+                    android:layout_marginHorizontal="20dp"
+                    android:fontFamily="@font/poppinsextralight"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Pembayaran : "
+                    android:layout_marginHorizontal="20dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppinslight"
+                    android:textSize="12dp"/>
+
+                <EditText
+                    android:id="@+id/pembayarantxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:editable="false"
+                    android:fontFamily="@font/poppinsextralight"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Harga : "
+                    android:layout_marginHorizontal="20dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppinslight"
+                    android:textSize="12dp"/>
+
+                <EditText
+                    android:id="@+id/harga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:editable="false"
+                    android:fontFamily="@font/poppinsextralight"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nominal Pembayaran Anda : "
+                    android:layout_marginHorizontal="20dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppinslight"
+                    android:textSize="12dp"/>
+
+                <EditText
+                    android:id="@+id/nominall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:editable="false"
+                    android:fontFamily="@font/poppinsextralight"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kembalian Anda : "
+                    android:layout_marginHorizontal="20dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppinslight"
+                    android:textSize="12dp"/>
+
+                <EditText
+                    android:id="@+id/kembalian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:editable="false"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/poppinsextralight"
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center"
+                android:text="Tunggu pesanan anda sampai, jika sudah sampai maka tekan tombol selesai"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/selesai"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="SELESAI"
+            android:layout_below="@id/linear"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:fontFamily="@font/poppinssemibold"
+            android:background="#801FEE34"/>
+
+    </RelativeLayout>
+
+</ScrollView>

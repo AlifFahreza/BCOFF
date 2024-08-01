@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292D36"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icback"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="back"
+                android:letterSpacing="0.3"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14dp"
+                android:textAllCaps="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFILE"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="176dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_height="176dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/set_profile_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:civ_border_color="#EE6A1F"
+                app:civ_border_width="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profilpic"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:hint="Username"
+                android:paddingTop="5dp"
+                android:background="@drawable/rounded_corner3"
+                android:textColorHint="#FFFFFF">
+
+                <EditText
+                    android:id="@+id/usernametxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:inputType="textPersonName"
+                    android:paddingRight="5dp"
+                    android:fontFamily="@font/poppinsextralight"
+                    android:textColor="#FFFFFF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Email"
+                android:paddingTop="5dp"
+                android:background="@drawable/rounded_corner3"
+                android:textColorHint="#FFFFFF">
+
+                <EditText
+                    android:id="@+id/emailtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:inputType="textEmailAddress"
+                    android:fontFamily="@font/poppinsextralight"
+                    android:textColor="#FFFFFF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Password"
+                android:paddingTop="5dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#EE6A1F"
+                android:background="@drawable/rounded_corner3"
+                android:textColorHint="#FFFFFF">
+
+                <EditText
+                    android:id="@+id/passwordtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/poppinsextralight"
+                    android:textColor="#FFFFFF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="304dp"
+                android:layout_height="45dp"
+                android:text="Save Profile"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppinssemibold"
+                android:background="@drawable/rounded_corner"/>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="304dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="13dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:text="Logout"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:background="@drawable/roundedcorner2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

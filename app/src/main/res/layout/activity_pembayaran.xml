@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292D36"
+    tools:context=".Pembayaran">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icback"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="back"
+                android:letterSpacing="0.3"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14dp"
+                android:textAllCaps="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAYMENT METHOD"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Menu Pembayaran Yang Anda Inginkan"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppinslight"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp"/>
+
+        <ImageView
+            android:layout_width="211dp"
+            android:layout_height="211dp"
+            android:src="@drawable/barcode"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <worker8.com.github.radiogroupplus.RadioGroupPlus
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:id="@+id/radio_group"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginVertical="6dp"
+                android:layout_height="61dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="66dp"
+                                android:layout_height="29dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/paypal"/>
+
+                            <LinearLayout
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+                                android:background="#292D36"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="paypal"
+                                android:textAllCaps="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_gravity="center"
+                                android:textSize="14dp"
+                                android:fontFamily="@font/poppinsbold"
+                                android:textColor="#292D36"/>
+                        </LinearLayout>
+
+                        <RadioButton
+                            android:id="@+id/radio_button1"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_centerVertical="true"
+                            android:buttonTint="#EE6A1F"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginVertical="6dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="66dp"
+                                android:layout_height="17dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/visa"/>
+
+                            <LinearLayout
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+                                android:background="#292D36"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="visa"
+                                android:textAllCaps="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_gravity="center"
+                                android:textSize="14dp"
+                                android:fontFamily="@font/poppinsbold"
+                                android:textColor="#292D36"/>
+                        </LinearLayout>
+
+                        <RadioButton
+                            android:id="@+id/radio_button2"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_centerVertical="true"
+                            android:buttonTint="#EE6A1F"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginVertical="6dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="66dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/master"/>
+
+                            <LinearLayout
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+                                android:background="#292D36"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="mastercard"
+                                android:textAllCaps="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_gravity="center"
+                                android:textSize="14dp"
+                                android:fontFamily="@font/poppinsbold"
+                                android:textColor="#292D36"/>
+                        </LinearLayout>
+
+                        <RadioButton
+                            android:id="@+id/radio_button3"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_centerVertical="true"
+                            android:buttonTint="#EE6A1F"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginVertical="6dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="66dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/kasir"/>
+
+                            <LinearLayout
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+                                android:background="#292D36"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="kasir"
+                                android:textAllCaps="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_gravity="center"
+                                android:textSize="14dp"
+                                android:fontFamily="@font/poppinsbold"
+                                android:textColor="#292D36"/>
+                        </LinearLayout>
+
+                        <RadioButton
+                            android:id="@+id/radio_button4"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_centerVertical="true"
+                            android:buttonTint="#EE6A1F"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </worker8.com.github.radiogroupplus.RadioGroupPlus>
+
+        <Button
+            android:id="@+id/bayar"
+            android:layout_width="304dp"
+            android:layout_height="45dp"
+            android:text="KONFIRMASI PEMBAYARAN"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:fontFamily="@font/poppinssemibold"
+            android:background="#EE6A1F"/>
+    </LinearLayout>
+
+</ScrollView>

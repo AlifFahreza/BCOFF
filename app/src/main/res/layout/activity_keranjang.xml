@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292D36"
+    tools:context=".Keranjang">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icback"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="back"
+                android:letterSpacing="0.3"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14dp"
+                android:textAllCaps="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR SHOPPING CART"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tekan Produk Untuk Menghapus"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppinslight"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shoppingcart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/roundedtotal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Harga :"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/totalharga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp.-"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bayar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="BAYAR"
+            android:layout_alignParentRight="true"
+            android:textColor="#FFFFFF"
+            android:background="#EE6A1F"/>
+
+    </LinearLayout>
+</RelativeLayout>
